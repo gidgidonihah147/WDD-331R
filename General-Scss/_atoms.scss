@@ -1,0 +1,47 @@
+@import "_variables";
+
+@mixin primary {
+    color: $primary-font-color;
+    font-family: $primary-font;
+}
+
+@mixin secondary {
+    color: $secondary-font-color;
+    font-family: $secondary-font;
+}
+
+@mixin link {
+    font-family: $secondary-font;
+    color: $link-colors;
+}
+
+h2,
+h3 {
+    @include primary;
+    border-bottom: 2px black solid;
+}
+
+title {
+    @include secondary;
+}
+
+h1 {
+    color: $h1-color;
+}
+
+a{
+    &:active{
+        color: $link-colors-active;
+    }
+
+    &:hover{
+        color: $link-colors-hover;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    &:link{
+        @include link;
+        text-decoration: none;
+    }
+    color: #666;
+}

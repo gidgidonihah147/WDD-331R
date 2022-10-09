@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["General-Scss/_variables.scss","General-Scss/_atoms.scss","General-Scss/_org.scss"],"names":[],"mappings":"AAAQ;AAAA;ACiBR;AAAA;EAdI,ODQiB;ECPjB;EAgBA;;;AAGJ;EAfI,ODImB;ECHnB,aDJa;;;ACsBjB;EACI,ODfO;;;ACkBX;EAcI;;AAbA;EACI,ODhBa;;ACmBjB;EACI,ODnBY;ECoBZ;;AAGJ;EA5BA,aDRa;ECSb,ODEU;EC2BN;;;AC3CR;EACI,kBFce;EEbf;EACA;EACA","file":"style.css"}

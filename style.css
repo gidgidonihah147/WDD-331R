@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&family=Smokum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&family=Smokum&display=swap");
+h2,
+h3 {
+  color: #22121a;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 2px black solid;
+}
+
+title {
+  color: #965217;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #85613f;
+}
+
+a {
+  color: #666;
+}
+a:active {
+  color: #d0d0d0;
+}
+a:hover {
+  color: #089bb1;
+  box-shadow: 5px 5px 5px black;
+}
+a:link {
+  font-family: "Roboto", sans-serif;
+  color: #0b69a4;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ddb68b;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
