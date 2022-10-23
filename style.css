@@ -10,6 +10,7 @@ h3 {
 title {
   color: #965217;
   font-family: "Roboto", sans-serif;
+  font-size: 50px;
 }
 
 h1 {
@@ -34,9 +35,14 @@ a:link {
 
 body {
   background-color: #ddb68b;
-  width: 70%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.sidebar .wrapper .zen-resources {
+  right: 50%;
+  margin-right: -672px;
 }
 
 /*# sourceMappingURL=style.css.map */
