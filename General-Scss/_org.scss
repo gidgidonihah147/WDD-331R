@@ -3,6 +3,25 @@ body {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 2.5fr .5fr;
+    //position: sticky;
+    grid-gap: 40px;
+
+}
+
+
+
+.intro {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 100px;
+    height: 80%;
+}

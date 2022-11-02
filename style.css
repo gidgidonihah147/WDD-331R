@@ -40,9 +40,20 @@ body {
   margin-right: auto;
 }
 
-.sidebar .wrapper .zen-resources {
-  right: 50%;
-  margin-right: -672px;
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 2.5fr 0.5fr;
+  grid-gap: 40px;
+}
+
+.intro {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 100px;
+  height: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
