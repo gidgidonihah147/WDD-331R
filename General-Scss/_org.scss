@@ -7,6 +7,7 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
+    background-attachment: fixed; 
 }
 
 .page-wrapper {
@@ -17,7 +18,6 @@ body {
 
 }
 
-
 .intro {
     grid-column: 1/-1;
     text-align: center;
@@ -26,14 +26,19 @@ body {
 .intro h1 {
     font-size: 100px;
     height: 80%;
-    color: #e7f1f1;
+    color: $box-details-color;
 }
 
-.explanation, .participation, .benefits, .requirements, .sidebar{
-    background-color: #C2B280;
+.explanation, .participation, .benefits, .requirements, .sidebar, .preamble{
+    background-color: $background-color;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    opacity: 0.8;
+  }
+
+  .summary{
+
+    font-size: 30px;
+    background-color: $background-color;
   }
