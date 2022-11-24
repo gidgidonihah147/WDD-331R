@@ -33,27 +33,57 @@ a:link {
   text-decoration: none;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
-  background-color: #ddb68b;
-  width: 50%;
+  background-color: rgba(214, 184, 146, 0.9);
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  background-image: url("images/desert.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .page-wrapper {
   display: grid;
   grid-template-columns: 2.5fr 0.5fr;
-  grid-gap: 40px;
 }
 
 .intro {
-  grid-column: 1/-1;
+  grid-column: 1;
   text-align: center;
 }
 
 .intro h1 {
-  font-size: 100px;
-  height: 80%;
+  font-size: 50px;
+  height: 20%;
+  color: #e7f1f1;
+}
+
+.explanation, .participation, .benefits, .requirements, .sidebar, .preamble, .summary, .heading {
+  background-color: rgba(214, 184, 146, 0.9);
+}
+
+#zen-supporting {
+  height: 30%;
+  overflow: scroll;
+  background-color: rgba(214, 184, 146, 0.9);
+  padding-right: 10px;
+  padding-left: 10px;
+  grid-column: 1;
+}
+
+aside {
+  height: 30%;
+  overflow: scroll;
+  background-color: rgba(214, 184, 146, 0.9);
+  grid-column: 2;
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
