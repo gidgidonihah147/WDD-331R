@@ -1,57 +1,140 @@
-html {
-    
-    overflow: hidden;
+@mixin hiero_hover {
+    color: $box-details-color;
+    font-family: $egypt-font;
+}
+
+@mixin hiero {
+    color: $box-details-color;
+    font-family: $primary-font;
 }
 
 body {
     background-color: $background-color;
     width: 80%;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     background-image: url("images/pyramid.jpeg");
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
-.page-wrapper {
-    display: grid;
-    grid-template-columns: 2.5fr .5fr;
-    //position: sticky;
-   // grid-gap: 40px;
-
-}
-
-.intro{
-    grid-column: 1;
-    text-align: center;
+.intro h1:hover {
+    font-size: 50px;
+    height: 20%;
+    @include hiero_hover();
 }
 
 .intro h1 {
-    font-size:50px;
+    font-size: 50px;
     height: 20%;
-    color: $box-details-color;
+    @include hiero();
 }
 
-.explanation, .participation, .benefits, .requirements, .sidebar, .preamble, .summary, .heading{
-    background-color: $background-color;
-  }
+h2:hover,
+h3:hover {
+    @include hiero_hover();
+}
 
-  #zen-supporting {
-    height: 30%;
-    overflow: scroll;
-    background-color: $background-color;
-    padding-right: 10px;
-    padding-left: 10px;
-    grid-column: 1;
-  }
+h2,
+h3 {
+    @include hiero();
+}
 
-  aside {
-    height: 30%;
-    overflow: scroll;
+
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.sidebar,
+.preamble,
+.summary,
+.heading {
     background-color: $background-color;
-    grid-column: 2;
-    padding-left: 10px;
-  }
-  
+}
+
+html::-webkit-scrollbar {
+    background-color: $background-color;
+    width: 50px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-image: url("images/anubis.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+
+html::-webkit-scrollbar-corner {
+    background-color: $background-color;
+}
+
+
+@media screen and (min-width: 900px) and (min-height: 750px) {
+
+    aside {
+        height: 40%;
+        overflow: scroll;
+        background-color: $background-color;
+        grid-column: 2;
+        padding-left: 10px;
+    }
+
+
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: 2.5fr .5fr;
+        //position: sticky;
+        // grid-gap: 40px;
+    }
+
+    .intro {
+        grid-column: 1;
+        text-align: center;
+    }
+
+    #zen-supporting {
+        height: 40%;
+        overflow: scroll;
+        background-color: $background-color;
+        padding-right: 10px;
+        padding-left: 10px;
+        grid-column: 1;
+    }
+
+    #zen-supporting::-webkit-scrollbar {
+        background-color: $background-color;
+        width: 25px;
+    }
+
+    #zen-supporting::-webkit-scrollbar-thumb {
+        background-image: url("images/pharaoh.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+
+    #zen-supporting::-webkit-scrollbar-corner {
+        background-color: $background-color;
+    }
+
+    aside::-webkit-scrollbar {
+        background-color: $background-color;
+        width: 25px;
+    }
+
+    aside::-webkit-scrollbar-thumb {
+        background-image: url("images/anubis.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+
+    aside::-webkit-scrollbar-corner {
+        background-color: $background-color;
+    }
+
+    html {
+        overflow: hidden;
+        font-size: 14px;
+    }
+}

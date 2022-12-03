@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&family=Smokum&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&family=Smokum&display=swap");
+@font-face {
+  font-family: Egypt;
+  src: url("fonts/egyptian.ttf");
+}
 h2,
 h3 {
   color: #22121a;
@@ -33,13 +37,10 @@ a:link {
   text-decoration: none;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   background-color: rgba(214, 184, 146, 0.9);
   width: 80%;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-image: url("images/pyramid.jpeg");
@@ -49,41 +50,114 @@ body {
   background-attachment: fixed;
 }
 
-.page-wrapper {
-  display: grid;
-  grid-template-columns: 2.5fr 0.5fr;
-}
-
-.intro {
-  grid-column: 1;
-  text-align: center;
+.intro h1:hover {
+  font-size: 50px;
+  height: 20%;
+  color: #85613f;
+  font-family: Egypt, bold;
 }
 
 .intro h1 {
   font-size: 50px;
   height: 20%;
-  color: #e7f1f1;
+  color: #85613f;
+  font-family: "Montserrat", sans-serif;
 }
 
-.explanation, .participation, .benefits, .requirements, .sidebar, .preamble, .summary, .heading {
+h2:hover,
+h3:hover {
+  color: #85613f;
+  font-family: Egypt, bold;
+}
+
+h2,
+h3 {
+  color: #85613f;
+  font-family: "Montserrat", sans-serif;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.sidebar,
+.preamble,
+.summary,
+.heading {
   background-color: rgba(214, 184, 146, 0.9);
 }
 
-#zen-supporting {
-  height: 30%;
-  overflow: scroll;
+html::-webkit-scrollbar {
   background-color: rgba(214, 184, 146, 0.9);
-  padding-right: 10px;
-  padding-left: 10px;
-  grid-column: 1;
+  width: 50px;
 }
 
-aside {
-  height: 30%;
-  overflow: scroll;
+html::-webkit-scrollbar-thumb {
+  background-image: url("images/anubis.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+}
+
+html::-webkit-scrollbar-corner {
   background-color: rgba(214, 184, 146, 0.9);
-  grid-column: 2;
-  padding-left: 10px;
+}
+
+@media screen and (min-width: 900px) and (min-height: 750px) {
+  aside {
+    height: 40%;
+    overflow: scroll;
+    background-color: rgba(214, 184, 146, 0.9);
+    grid-column: 2;
+    padding-left: 10px;
+  }
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 2.5fr 0.5fr;
+  }
+  .intro {
+    grid-column: 1;
+    text-align: center;
+  }
+  #zen-supporting {
+    height: 40%;
+    overflow: scroll;
+    background-color: rgba(214, 184, 146, 0.9);
+    padding-right: 10px;
+    padding-left: 10px;
+    grid-column: 1;
+  }
+  #zen-supporting::-webkit-scrollbar {
+    background-color: rgba(214, 184, 146, 0.9);
+    width: 25px;
+  }
+  #zen-supporting::-webkit-scrollbar-thumb {
+    background-image: url("images/pharaoh.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+  }
+  #zen-supporting::-webkit-scrollbar-corner {
+    background-color: rgba(214, 184, 146, 0.9);
+  }
+  aside::-webkit-scrollbar {
+    background-color: rgba(214, 184, 146, 0.9);
+    width: 25px;
+  }
+  aside::-webkit-scrollbar-thumb {
+    background-image: url("images/anubis.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+  }
+  aside::-webkit-scrollbar-corner {
+    background-color: rgba(214, 184, 146, 0.9);
+  }
+  html {
+    overflow: hidden;
+    font-size: 14px;
+  }
+}
+@font-face {
+  font-family: Egypt;
+  src: url("fonts/egyptian.ttf");
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&family=Smokum&display=swap');
 
+
 //fonts
+
+@font-face {
+    font-family: Egypt;
+    src: url('fonts/egyptian.ttf');
+}
+
 
 $primary-font: 'Montserrat', sans-serif;
 $secondary-font: 'Roboto', sans-serif; 
 $headings-font: 'Smokum', cursive;
+$egypt-font: Egypt, bold;
+
+
+
+
+
+
+
 
 
 //Colors
@@ -12,7 +27,7 @@ $headings-font: 'Smokum', cursive;
 $primary-font-color: #22121a;
 $secondary-font-color: #965217;
 $h1-color: #85613f;
-$box-details-color: #e7f1f1;
+$box-details-color: #85613f;
 $background-color: rgb(214, 184, 146, 0.9);
 $link-colors: #0b69a4;
 $link-colors-active: #d0d0d0;
