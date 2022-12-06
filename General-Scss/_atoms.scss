@@ -30,19 +30,20 @@ h1 {
     color: $h1-color;
 }
 
-a{
-    &:active{
+a {
+    &:active {
         color: $link-colors-active;
     }
 
-    &:hover{
+    &:hover {
         color: $link-colors-hover;
         box-shadow: 5px 5px 5px black;
     }
 
-    &:link{
+    &:link {
         @include link;
         text-decoration: none;
     }
+
     color: #666;
 }
